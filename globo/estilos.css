@@ -1,0 +1,226 @@
+
+  /**************************************
+  *        configuraçoes no topo        *
+  ***************************************/
+  .logoLocal {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;  
+  }
+.logoImage {
+  width: 170px;
+}
+/*********************************************
+*  barras de enfeite  horizontal e vertical  *
+**********************************************/
+.horizontalBar {
+  height: 1px;
+  background-color: #ebedef;
+  margin: 10px 0;
+}
+.verticalBar {
+  background-color: #ebedef;
+  width: 1px;
+  margin: 0 35px;
+  margin-top: 36px;
+}
+.g1News .horizontalBar{
+  margin: 25px 0;
+}
+body {
+  font-family: "Encode Sans", sans-serif;
+}
+/**************************************
+*         links para menu-topo        *
+***************************************/
+.links {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+
+  height: 40px;
+  width: 85%;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+/**************************************
+*          cores no menu-topo         *
+***************************************/
+.g1 {
+  color: #c3170c;
+}
+.oGlobo {
+  color: #1e4b9b;
+}
+.valor {
+  color: #006766;
+}
+.ge {
+  color: #07aa47;
+}
+.cartola {
+  color: #e3662b;
+}
+.globoplay {
+  color: #fb0735;
+}
+.dropz {
+  color: #ff75bb;
+}
+.gshow {
+  color: #ec7d00;
+}
+.quem {
+  color: #323333;
+}
+.receitas {
+  color: #a81d83;
+}
+/***********************************************
+*   onde fica o conteudo principal da pagina   *
+************************************************/
+.container {
+  width: 85%;
+  margin: 0 auto; /*Elementos bloco lado a lado*/
+  display: flex;
+}
+.g1News {
+  margin-top: 36px;
+}
+/**.geNews {
+  width: 250px;
+  height: 600px;
+}
+.gshowNews {
+  width: 250px;
+  height: 600px;
+}*/
+
+/***********************************************
+*        configurações dos sub-conteudos       *
+************************************************/
+.geNews .news, .gshowNews .news{
+  width: 100%;
+}
+.news img {
+  width: 100%;
+
+  border-radius: 12px;
+  margin-bottom: 11px;
+  margin-top: 36px;
+}
+.chamada {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
+  margin-bottom: 6px;
+}
+.geNews .chamada {
+  color: #16ae54;
+}
+.gshowNews .chamada {
+  color: #ec8006;
+}
+.g1News .chamada {
+  color: #c4170c;
+}
+
+.titulo {
+  color: #2f3134;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: -0.045em;
+
+  margin-bottom: 4px;
+}
+
+.paragrafo {
+  color: #2f3134;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.048em;
+
+  margin-bottom: 14px;
+}
+.noticiaPrincipal h1 {
+  color: #c4160c;
+
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: -0.01em;
+
+  margin-bottom: 30px;
+}
+.noticiaPrincipal p {
+  color: #303134;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+
+  margin-bottom: 7px;
+}
+.g1NewsLinha {
+  display: flex;
+  justify-content: space-between;  
+}
+.g1NewsLinha .news{
+  width: 193px; 
+}
+.g1NewsLinha .news img {
+  width: 90%;
+}
+
+/******************************************
+*    configuraçoes para tela menor        *
+******************************************/
+@media(max-width: 1460px){
+  .g1NewsLinha .news,
+  .geNews .news, 
+  .gshowNews .news{
+    width: 100%;
+  }
+}
+
+@media(max-width: 1100px){
+
+  .container{
+    flex-direction: column;
+  }
+  .g1NewsLinha{
+    flex-direction: column;
+  }
+}
+@media(max-width: 1040px){
+  .valor, 
+  .cartola, 
+  .dropz, 
+  .quem,
+  .receitas{
+    display: none; /*some essas coisas*/
+  }
+  .noticiaPrincipal h1{
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
