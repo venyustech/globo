@@ -1,6 +1,3 @@
-/**************************************
-  *        configuraçoes no topo        *
-  ***************************************/
 .logoLocal {
   height: 80px;
   display: flex;
@@ -10,9 +7,7 @@
 .logoImage {
   width: 170px;
 }
-/*********************************************
-*  barras de enfeite  horizontal e vertical  *
-**********************************************/
+
 .horizontalBar {
   height: 1px;
   background-color: #ebedef;
@@ -30,9 +25,7 @@
 body {
   font-family: "Encode Sans", sans-serif;
 }
-/**************************************
-*         links para menu-topo        *
-***************************************/
+
 .links {
   font-size: 25px;
   font-style: normal;
@@ -51,9 +44,7 @@ body {
 a {
   text-decoration: none;
 }
-/**************************************
-*          cores no menu-topo         *
-***************************************/
+
 .g1 {
   color: #c3170c;
 }
@@ -84,29 +75,16 @@ a {
 .receitas {
   color: #a81d83;
 }
-/***********************************************
-*   onde fica o conteudo principal da pagina   *
-************************************************/
+
 .container {
   width: 85%;
-  margin: 0 auto; /*Elementos bloco lado a lado*/
+  margin: 0 auto;
   display: flex;
 }
 .g1News {
   margin-top: 36px;
 }
-/**.geNews {
-  width: 250px;
-  height: 600px;
-}
-.gshowNews {
-  width: 250px;
-  height: 600px;
-}*/
 
-/***********************************************
-*        configurações dos sub-conteudos       *
-************************************************/
 .geNews .news,
 .gshowNews .news {
   width: 100%;
@@ -190,9 +168,6 @@ a {
   width: 90%;
 }
 
-/******************************************
-*    configuraçoes para tela menor        *
-******************************************/
 @media (max-width: 1460px) {
   .g1NewsLinha .news,
   .geNews .news,
@@ -215,7 +190,7 @@ a {
   .dropz,
   .quem,
   .receitas {
-    display: none; /*some essas coisas*/
+    display: none;
   }
   .noticiaPrincipal h1 {
     font-size: 36px;
